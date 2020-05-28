@@ -1,25 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Git Course</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <strong>Git Course</strong>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"
+        alt="git_logo">
+      <strong>Commands</strong>
+    </div>
   </header>
-  <div>                                                                                                                                                                                                                                                                                                                                                           
-    <h1>Git Commands</h1>
+  <div class="content">
+    <p>In the previous blog, you got an understanding of&nbsp;<a href="https://www.edureka.co/blog/what-is-git/"
+        target="_blank" style="background-color: rgb(255, 255, 255); --darkreader-inline-bgcolor:#eae7e1;"
+        rel="nofollow" data-darkreader-inline-bgcolor="">what git is</a>. In this blog, I will talk about the Top 20 Git
+      Commands that
+      you will be using frequently while you are <a href="https://dzone.com/refcardz/getting-started-git"
+        target="_blank" rel="nofollow">working with Git</a>.</p>
+    <p>Here are the Git commands which are being covered:</p>
     <ul>
-      <li>
-        <code>git init </code><span>#Inicia um novo repositório</span>
-      </li>
+      <li><strong>git config</strong></li>
+      <li><strong>git init</strong></li>
+      <li><strong>git clone</strong></li>
+      <li><strong>git add</strong></li>
+      <li><strong>git commit</strong></li>
+      <li><strong>git diff</strong></li>
+      <li><strong>git reset</strong></li>
+      <li><strong>git status</strong></li>
+      <li><strong>git rm</strong></li>
+      <li><strong>git log</strong></li>
+      <li><strong>git show</strong></li>
+      <li><strong>git tag</strong></li>
+      <li><strong>git branch</strong></li>
+      <li><strong>git checkout</strong></li>
+      <li><strong>git merge</strong></li>
+      <li><strong>git remote</strong></li>
+      <li><strong>git push</strong></li>
+      <li><strong>git pull</strong></li>
+      <li><strong>git stash</strong></li>
     </ul>
+    <p>So, let's get started!</p>
+    <h2><strong>Git Commands</strong></h2>
+    <h3>git config</h3>
+    <p>Usage:&nbsp;<code>git config –global user.name “[name]”</code>&nbsp;&nbsp;</p>
+    <p>Usage:&nbsp;<code>git config –global user.email “[email address]”</code>&nbsp;&nbsp;</p>
+    <p>This command sets the author name and email address respectively to be used with your commits.</p>
+    <p></p>
+    <h3>git init</h3>
+    <p>Usage:&nbsp;<code>git init [repository name]</code></p>
+    <p><span id="_tmp_pre_3">&nbsp;</span></p>
+    <p>This command is used to start a new repository.</p>
+    <p></p>
+    <h3>git clone</h3>
+    <p>Usage:&nbsp;<code>git clone [url]</code><span id="_tmp_pre_4">&nbsp;</span>&nbsp;</p>
+    <p>This command is used to obtain a repository from an existing URL.</p>
+    <p></p>
+    <h3>git add</h3>
+    <p>Usage:&nbsp;<code>git add [file]</code><span id="_tmp_pre_5">&nbsp;</span>&nbsp;</p>
+    <p>This command adds a file to the staging area.</p>
+    <p>Usage:&nbsp;<code>git add *</code><span id="_tmp_pre_6">&nbsp;</span>&nbsp;</p>
+    <p>This command adds one or more to the staging area.</p>
+    <h3>git commit</h3>
+    <p>Usage:&nbsp;<code>git commit -m “[ Type in the commit message]”</code><span id="_tmp_pre_7">&nbsp;</span>&nbsp;
+    </p>
+    <p>This command records or snapshots the file permanently in the version history.</p>
+    <p>Usage:&nbsp;<code>git commit -a</code><span id="_tmp_pre_8">&nbsp;</span>&nbsp;</p>
+    <p>This command commits any files you’ve added with the git add command and also commits any files you’ve
+      changed since then.</p>
+    <h3>git diff</h3>
+    <p>Usage:&nbsp;<code>git diff</code><span id="_tmp_pre_9">&nbsp;</span>&nbsp;</p>
+    <p>This command shows the file differences which are not yet staged.</p>
+    <p>&nbsp;<code>Usage: git diff –staged</code><span id="_tmp_pre_10">&nbsp;</span></p>
+    <p>This command shows the differences between the files in the staging area and the latest version
+      present.</p>
+    <p>Usage:&nbsp;<code>git diff [first branch] [second branch]</code><span id="_tmp_pre_11">&nbsp;</span>&nbsp;</p>
+    <p>This command shows the differences between the two branches mentioned.</p>
+    <h3>git reset</h3>
+    <p>Usage:&nbsp;<code>git reset [file]</code><span id="_tmp_pre_12">&nbsp;</span>&nbsp;</p>
+    <p>This command unstages the file, but it preserves the file contents.</p>
+    <p>Usage:&nbsp;<code>git reset [commit]</code><span id="_tmp_pre_13">&nbsp;</span>&nbsp;</p>
+    <p>This command undoes all the commits after the specified commit and preserves the changes locally.</p>
+    <p>Usage:&nbsp;<code>git reset –hard [commit]</code><span id="_tmp_pre_14">&nbsp;</span> This command
+      discards all history and goes back to the specified commit.</p>
+    <h3>git status</h3>
+    <p>Usage:&nbsp;<code>git status</code><span id="_tmp_pre_15">&nbsp;</span>&nbsp;</p>
+    <p>This command lists all the files that have to be committed.</p>
+    <h3>git rm</h3>
+    <p>Usage:&nbsp;<code>git rm [file]</code><span id="_tmp_pre_16">&nbsp;</span>&nbsp;</p>
+    <p>This command deletes the file from your working directory and stages the deletion.</p>
+    <h3>git log</h3>
+    <p>Usage:&nbsp;<code>git log</code><span id="_tmp_pre_17">&nbsp;</span>&nbsp;</p>
+    <p>This command is used to list the version history for the current branch.</p>
+    <p>Usage:&nbsp;<code>git log –follow[file]</code><span id="_tmp_pre_18">&nbsp;</span>&nbsp;</p>
+    <p>This command lists version history for a file, including the renaming of files also.</p>
+    <h3>git show</h3>
+    <p>Usage:&nbsp;<code>git show [commit]</code><span id="_tmp_pre_19">&nbsp;</span>&nbsp;</p>
+    <p>This command shows the metadata and content changes of the specified commit.</p>
+    <h3>git tag</h3>
+    <p style="text-align: left;">Usage:&nbsp;<code>git tag [commitID]</code><span id="_tmp_pre_20">&nbsp;</span>&nbsp;
+    </p>
+    <p>This command is used to give tags to the specified commit.</p>
+    <h3>git branch</h3>
+    <p>Usage:&nbsp;<code>git branch</code><span id="_tmp_pre_21">&nbsp;</span>&nbsp;</p>
+    <p>This command lists all the local branches in the current repository.</p>
+    <p>Usage:&nbsp;<code>git branch [branch name]</code><span id="_tmp_pre_22">&nbsp;</span>&nbsp;</p>
+    <p>This command creates a new branch.</p>
+    <p>Usage:&nbsp;<code>git branch -d [branch name]</code><span id="_tmp_pre_23">&nbsp;</span>&nbsp;</p>
+    <p>This command deletes the feature branch.</p>
+    <h3>git checkout</h3>
+    <p>Usage:&nbsp;<code>git checkout [branch name]</code><span id="_tmp_pre_24">&nbsp;</span>&nbsp;</p>
+    <p>This command is used to switch from one branch to another.</p>
+    <p>Usage:&nbsp;<code>git checkout -b [branch name]</code><span id="_tmp_pre_25">&nbsp;</span>&nbsp;</p>
+    <p>This command creates a new branch and also switches to it.</p>
+    <h3>git merge</h3>
+    <p style="text-align: left;">Usage:&nbsp;<code>git merge [branch name]</code><span
+        id="_tmp_pre_26">&nbsp;</span>&nbsp;</p>
+    <p>This command merges the specified branch’s history into the current branch.</p>
+    <h3>git remote</h3>
+    <p>Usage:&nbsp;<code>git remote add [variable name] [Remote Server Link]</code><span
+        id="_tmp_pre_27">&nbsp;</span>&nbsp;</p>
+    <p>This command is used to connect your local repository to the remote server.</p>
+    <h3>git push</h3>
+    <p>Usage:&nbsp;<code>git push [variable name] master</code><span id="_tmp_pre_28">&nbsp;</span>&nbsp;</p>
+    <p>This command sends the committed changes of master branch to your remote repository.</p>
+    <p>Usage:&nbsp;<code>git push [variable name] [branch]</code><span id="_tmp_pre_29">&nbsp;</span>&nbsp;
+    </p>
+    <p>This command sends the branch commits to your remote repository.</p>
+    <p>Usage:&nbsp;<code>git push –all [variable name]</code><span id="_tmp_pre_30">&nbsp;</span>&nbsp;</p>
+    <p>This command pushes all branches to your remote repository.</p>
+    <p>Usage:&nbsp;<code>git push [variable name] :[branch name]</code><span id="_tmp_pre_31">&nbsp;</span>&nbsp;</p>
+    <p>This command deletes a branch on your remote repository.</p>
+    <h3>git pull</h3>
+    <p>Usage:&nbsp;<code>git pull [Repository Link]</code><span id="_tmp_pre_32">&nbsp;</span>&nbsp;</p>
+    <p>This command fetches and merges changes on the remote server to your working directory.</p>
+    <h3>git stash</h3>
+    <p>Usage:&nbsp;<code>git stash save</code><span id="_tmp_pre_33">&nbsp;</span>&nbsp;</p>
+    <p>This command temporarily stores all the modified tracked files.</p>
+    <p>Usage:&nbsp;<code>git stash pop</code><span id="_tmp_pre_34">&nbsp;</span>&nbsp;</p>
+    <p>This command restores the most recently stashed files.</p>
+    <p>Usage:&nbsp;<code>git stash list</code><span id="_tmp_pre_35">&nbsp;&nbsp;</span></p>
+    <p>This command lists all stashed changesets.</p>
+    <p style="text-align: left;">Usage:&nbsp;<code>git stash drop</code><span id="_tmp_pre_36">&nbsp;&nbsp;</span></p>
+    <p>This command discards the most recently stashed changeset.</p>
+
   </div>
+
   <footer>
     Curso realizado na Digital Innovation One
   </footer>
 </body>
+
 </html>
